@@ -35,10 +35,37 @@ li {
     align-items: center;
 }
 
+.checkbox {
+    margin-right: 10px;
+}
+
+.date {
+    font-size: 0.8em;
+    color: gray;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
 button.delete {
-    background: red;
+    background: none;
+    color: red;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 1;
+}
+
+button#archiveAllButton, button#archiveSelectedButton {
+    background: #007bff;
     color: white;
     border: none;
-    padding: 5px;
+    padding: 10px;
+    margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+button#archiveAllButton:hover, button#archiveSelectedButton:hover {
+    background: #0056b3;
 }

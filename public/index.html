@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste de courses</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/public/logo.png" type="image/png">
+    <!-- <link rel="icon" href="/public/logo.png" type="image/png"> -->
 </head>
 <body>
     <div id="app">
@@ -13,6 +13,13 @@
         <input type="text" id="itemInput" placeholder="Ajouter un article">
         <button id="addItemButton">Ajouter</button>
         <ul id="shoppingList"></ul>
+        <button id="archiveAllButton">Archiver tout</button>
+        <button id="archiveSelectedButton">Archiver sélection</button>
+        <button id="showArchiveButton">Archives (<span id="archiveCount">0</span>)</button>
+        <div id="archiveSection" style="display: none;">
+            <h2>Archives</h2>
+            <ul id="archiveList"></ul>
+        </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="app.js"></script>
